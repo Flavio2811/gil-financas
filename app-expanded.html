@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💰 Gil.Finanças PRO - Sistema Completo de Gestão Financeira</title>
+    <title>ðŸ’° Gil.FinanÃ§as PRO - Sistema Completo de GestÃ£o Financeira</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -625,25 +625,9 @@
             border: 1px solid rgba(239, 68, 68, 0.3);
         }
 
-        /* FAB */
+        /* FAB - OCULTO */
         .fab {
-            position: absolute;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--primary-light));
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 28px;
             display: none !important;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(27, 127, 94, 0.3);
-            transition: all 0.3s ease;
-            z-index: 100;
         }
 
         .fab:hover {
@@ -675,7 +659,7 @@
 <body>
     <div id="loading" class="loading">
         <div class="spinner"></div>
-        <span>Carregando Gil.Finanças PRO...</span>
+        <span>Carregando Gil.FinanÃ§as PRO...</span>
     </div>
 
     <!-- LOGIN/SIGNUP -->
@@ -684,8 +668,8 @@
             <!-- TELA DE LOGIN -->
             <div id="login-form" class="login-card">
                 <div class="login-logo">G</div>
-                <h2 style="margin-bottom: 10px;">Gil.finanças PRO</h2>
-                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 30px;">Gestão financeira profissional e inteligente</p>
+                <h2 style="margin-bottom: 10px;">Gil.finanÃ§as PRO</h2>
+                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 30px;">GestÃ£o financeira profissional e inteligente</p>
 
                 <form onsubmit="handleLogin(event)">
                     <div class="form-group">
@@ -701,38 +685,38 @@
 
 
                 <div style="margin-top: 20px; text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
-                    <span style="font-size: 13px; color: var(--text-secondary);">Não tem conta? </span>
+                    <span style="font-size: 13px; color: var(--text-secondary);">NÃ£o tem conta? </span>
                     <a onclick="toggleRegister()" style="color: var(--primary); cursor: pointer; font-weight: 600;">Registrar</a>
                     <br><br>
                     <a onclick="toggleForgotPassword()" style="font-size: 12px; color: var(--text-secondary); cursor: pointer;">Esqueci minha senha</a>
                 </div>
             </div>
 
-            <!-- TELA DE RECUPERAÇÃO DE SENHA -->
+            <!-- TELA DE RECUPERAÃ‡ÃƒO DE SENHA -->
             <div id="forgot-password-form" class="login-card hidden">
                 <div class="login-logo">G</div>
                 <h2 style="margin-bottom: 10px;">Recuperar Senha</h2>
-                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 30px;">Digite seu e-mail para receber um código de recuperação</p>
+                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 30px;">Digite seu e-mail para receber um cÃ³digo de recuperaÃ§Ã£o</p>
 
                 <form id="forgot-form" onsubmit="handleForgotPassword(event)">
                     <div class="form-group">
                         <label>E-mail Cadastrado</label>
                         <input type="email" id="forgot-email" placeholder="seu@email.com" required>
                     </div>
-                    <button type="submit" class="btn-primary">Enviar Código</button>
+                    <button type="submit" class="btn-primary">Enviar CÃ³digo</button>
                 </form>
 
-                <!-- SEÇÃO DE CÓDIGO (ESCONDIDA INICIALMENTE) -->
+                <!-- SEÃ‡ÃƒO DE CÃ“DIGO (ESCONDIDA INICIALMENTE) -->
                 <div id="reset-code-section" class="hidden" style="margin-top: 30px;">
                     <form onsubmit="handleResetPassword(event)">
                         <div class="form-group">
-                            <label>Código de Verificação</label>
-                            <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 10px;">Enviamos um código para seu e-mail de recuperação</p>
-                            <input type="text" id="reset-code" placeholder="Digite o código (6 dígitos)" required maxlength="6">
+                            <label>CÃ³digo de VerificaÃ§Ã£o</label>
+                            <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 10px;">Enviamos um cÃ³digo para seu e-mail de recuperaÃ§Ã£o</p>
+                            <input type="text" id="reset-code" placeholder="Digite o cÃ³digo (6 dÃ­gitos)" required maxlength="6">
                         </div>
                         <div class="form-group">
                             <label>Nova Senha</label>
-                            <input type="password" id="reset-password" placeholder="Mínimo 6 caracteres" required minlength="6">
+                            <input type="password" id="reset-password" placeholder="MÃ­nimo 6 caracteres" required minlength="6">
                         </div>
                         <div class="form-group">
                             <label>Confirmar Senha</label>
@@ -743,7 +727,7 @@
                 </div>
 
                 <div style="margin-top: 20px; text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
-                    <a onclick="toggleForgotPassword()" style="font-size: 13px; color: var(--primary); cursor: pointer; font-weight: 600;">← Voltar ao Login</a>
+                    <a onclick="toggleForgotPassword()" style="font-size: 13px; color: var(--primary); cursor: pointer; font-weight: 600;">â† Voltar ao Login</a>
                 </div>
             </div>
 
@@ -751,13 +735,13 @@
             <div id="register-form" class="login-card hidden" style="max-height: 90vh; overflow-y: auto;">
                 <div class="login-logo">G</div>
                 <h2 style="margin-bottom: 10px;">Criar Conta</h2>
-                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 15px;">Registre-se para começar a gerenciar seus empréstimos</p>
+                <p style="color: var(--text-secondary); font-size: 13px; margin-bottom: 15px;">Registre-se para comeÃ§ar a gerenciar seus emprÃ©stimos</p>
 
                 <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 12px; margin-bottom: 20px; font-size: 12px; color: #856404;">
-                    <strong>⚠️ Registro Limitado:</strong> Este sistema está configurado para <strong>2 contas apenas</strong>:<br>
-                    1️⃣ <strong>Desenvolvedor/Admin</strong> - Para manutenção do aplicativo (não vê dados dos clientes)<br>
-                    2️⃣ <strong>Cliente/Proprietário</strong> - Para gerenciar o negócio<br>
-                    Após preencher este registro, o sistema será fechado para novos usuários.
+                    <strong>âš ï¸ Registro Limitado:</strong> Este sistema estÃ¡ configurado para <strong>2 contas apenas</strong>:<br>
+                    1ï¸âƒ£ <strong>Desenvolvedor/Admin</strong> - Para manutenÃ§Ã£o do aplicativo (nÃ£o vÃª dados dos clientes)<br>
+                    2ï¸âƒ£ <strong>Cliente/ProprietÃ¡rio</strong> - Para gerenciar o negÃ³cio<br>
+                    ApÃ³s preencher este registro, o sistema serÃ¡ fechado para novos usuÃ¡rios.
                 </div>
 
                 <form onsubmit="handleRegister(event)">
@@ -770,11 +754,11 @@
                         <input type="email" id="reg-email" placeholder="seu@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label>📧 Email de Recuperação 1 (Opcional)</label>
+                        <label>ðŸ“§ Email de RecuperaÃ§Ã£o 1 (Opcional)</label>
                         <input type="email" id="reg-email-recuperacao1" placeholder="email.recuperacao1@email.com">
                     </div>
                     <div class="form-group">
-                        <label>📧 Email de Recuperação 2 (Opcional)</label>
+                        <label>ðŸ“§ Email de RecuperaÃ§Ã£o 2 (Opcional)</label>
                         <input type="email" id="reg-email-recuperacao2" placeholder="email.recuperacao2@email.com">
                     </div>
                     <div class="form-group">
@@ -782,22 +766,22 @@
                         <input type="tel" id="reg-phone" placeholder="(11) 99999-9999">
                     </div>
                     <div class="form-group">
-                        <label>📱 Telefone de Recuperação (Opcional)</label>
+                        <label>ðŸ“± Telefone de RecuperaÃ§Ã£o (Opcional)</label>
                         <input type="tel" id="reg-phone-recuperacao" placeholder="(11) 98888-8888">
                     </div>
                     <div class="form-group">
-                        <label>💬 WhatsApp de Recuperação (Opcional)</label>
+                        <label>ðŸ’¬ WhatsApp de RecuperaÃ§Ã£o (Opcional)</label>
                         <input type="tel" id="reg-whatsapp-recuperacao" placeholder="(11) 97777-7777">
                     </div>
                     <div class="form-group">
                         <label>Senha</label>
-                        <input type="password" id="reg-senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+                        <input type="password" id="reg-senha" placeholder="MÃ­nimo 6 caracteres" required minlength="6">
                     </div>
                     <button type="submit" class="btn-primary">Registrar</button>
                 </form>
 
                 <div style="margin-top: 20px; text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
-                    <span style="font-size: 13px; color: var(--text-secondary);">Já tem conta? </span>
+                    <span style="font-size: 13px; color: var(--text-secondary);">JÃ¡ tem conta? </span>
                     <a onclick="toggleRegister()" style="color: var(--primary); cursor: pointer; font-weight: 600;">Entrar</a>
                 </div>
             </div>
@@ -810,40 +794,40 @@
         <aside class="sidebar">
             <div class="logo">
                 <div class="logo-icon">G</div>
-                <div class="logo-text">Gil.finanças PRO</div>
+                <div class="logo-text">Gil.finanÃ§as PRO</div>
             </div>
 
             <div class="menu-section">
                 <div class="menu-section-title">Menu Principal</div>
                 <ul class="nav-menu">
-                    <li><a class="nav-link active" onclick="showPage('dashboard')">📊 Dashboard</a></li>
-                    <li><a class="nav-link" onclick="showPage('clientes')">👥 Clientes</a></li>
-                    <li><a class="nav-link" onclick="showPage('emprestimos')">💰 Empréstimos</a></li>
-                    <li><a class="nav-link" onclick="showPage('pagamentos')">💳 Pagamentos</a></li>
-                    <li><a class="nav-link" onclick="showPage('cobrancas')">🔔 Cobranças</a></li>
+                    <li><a class="nav-link active" onclick="showPage('dashboard')">ðŸ“Š Dashboard</a></li>
+                    <li><a class="nav-link" onclick="showPage('clientes')">ðŸ‘¥ Clientes</a></li>
+                    <li><a class="nav-link" onclick="showPage('emprestimos')">ðŸ’° EmprÃ©stimos</a></li>
+                    <li><a class="nav-link" onclick="showPage('pagamentos')">ðŸ’³ Pagamentos</a></li>
+                    <li><a class="nav-link" onclick="showPage('cobrancas')">ðŸ”” CobranÃ§as</a></li>
                 </ul>
             </div>
 
             <div class="menu-section">
-                <div class="menu-section-title">Gestão</div>
+                <div class="menu-section-title">GestÃ£o</div>
                 <ul class="nav-menu">
-                    <li><a class="nav-link" onclick="showPage('calendario')">📅 Calendário</a></li>
-                    <li><a class="nav-link" onclick="showPage('relatorios')">📈 Relatórios</a></li>
-                    <li><a class="nav-link" onclick="showPage('configuracoes')">⚙️ Configurações</a></li>
+                    <li><a class="nav-link" onclick="showPage('calendario')">ðŸ“… CalendÃ¡rio</a></li>
+                    <li><a class="nav-link" onclick="showPage('relatorios')">ðŸ“ˆ RelatÃ³rios</a></li>
+                    <li><a class="nav-link" onclick="showPage('configuracoes')">âš™ï¸ ConfiguraÃ§Ãµes</a></li>
                 </ul>
             </div>
 
             <div class="menu-section">
                 <div class="menu-section-title">Ferramentas</div>
                 <ul class="nav-menu">
-                    <li><a class="nav-link" onclick="showPage('editor-cores')">🎨 Editor de Cores</a></li>
+                    <li><a class="nav-link" onclick="showPage('editor-cores')">ðŸŽ¨ Editor de Cores</a></li>
                 </ul>
             </div>
 
             <div class="menu-section">
                 <div class="menu-section-title">Suporte</div>
                 <ul class="nav-menu">
-                    <li><a class="nav-link" href="https://wa.me/5511994958777" target="_blank" style="display: flex; align-items: center; gap: 8px;">💬 WhatsApp Suporte</a></li>
+                    <li><a class="nav-link" href="https://wa.me/5511994958777" target="_blank" style="display: flex; align-items: center; gap: 8px;">ðŸ’¬ WhatsApp Suporte</a></li>
                 </ul>
             </div>
         </aside>
@@ -853,16 +837,16 @@
             <div class="header">
                 <div>
                     <h1>Dashboard</h1>
-                    <p style="color: var(--text-secondary); font-size: 14px;">Bem-vindo ao seu sistema de gestão financeira</p>
+                    <p style="color: var(--text-secondary); font-size: 14px;">Bem-vindo ao seu sistema de gestÃ£o financeira</p>
                 </div>
                 <div class="header-right">
                     <span id="current-date" style="font-size: 13px; color: var(--text-secondary);"></span>
                     <div class="avatar" onclick="toggleUserMenu()">
                         <span id="avatar-initials">GF</span>
                         <div class="user-menu" id="user-menu">
-                            <a onclick="showPage('perfil'); toggleUserMenu()">👤 Perfil</a>
-                            <a onclick="showPage('configuracoes'); toggleUserMenu()">⚙️ Configurações</a>
-                            <a onclick="logout()">🚪 Sair</a>
+                            <a onclick="showPage('perfil'); toggleUserMenu()">ðŸ‘¤ Perfil</a>
+                            <a onclick="showPage('configuracoes'); toggleUserMenu()">âš™ï¸ ConfiguraÃ§Ãµes</a>
+                            <a onclick="logout()">ðŸšª Sair</a>
                         </div>
                     </div>
                 </div>
@@ -872,51 +856,51 @@
             <div id="dashboard" class="page">
                 <div class="stats-grid">
                     <div class="card stat-card">
-                        <div class="stat-icon green">👥</div>
+                        <div class="stat-icon green">ðŸ‘¥</div>
                         <div>
                             <div class="stat-label">Clientes Ativos</div>
                             <div class="stat-value" id="total-clientes">0</div>
-                            <div class="stat-change">+8,2% vs. mês anterior</div>
+                            <div class="stat-change">+8,2% vs. mÃªs anterior</div>
                         </div>
                     </div>
                     <div class="card stat-card">
-                        <div class="stat-icon green">💹</div>
+                        <div class="stat-icon green">ðŸ’¹</div>
                         <div>
                             <div class="stat-label">Capital Emprestado</div>
                             <div class="stat-value" id="total-capital">R$ 0,00</div>
-                            <div class="stat-change">+12,5% vs. mês anterior</div>
+                            <div class="stat-change">+12,5% vs. mÃªs anterior</div>
                         </div>
                     </div>
                     <div class="card stat-card">
-                        <div class="stat-icon green">💵</div>
+                        <div class="stat-icon green">ðŸ’µ</div>
                         <div>
                             <div class="stat-label">Total a Receber</div>
                             <div class="stat-value" id="total-receber">R$ 47.920</div>
-                            <div class="stat-change">+6,4% vs. mês anterior</div>
+                            <div class="stat-change">+6,4% vs. mÃªs anterior</div>
                         </div>
                     </div>
                     <div class="card stat-card">
-                        <div class="stat-icon orange">⏰</div>
+                        <div class="stat-icon orange">â°</div>
                         <div>
                             <div class="stat-label">Em Atraso</div>
                             <div class="stat-value" id="total-atraso">R$ 2.840</div>
-                            <div class="stat-change">⚠️ Ação necessária</div>
+                            <div class="stat-change">âš ï¸ AÃ§Ã£o necessÃ¡ria</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="chart-card">
-                    <div class="chart-title">Fluxo de Recebimentos (últimos 6 meses)</div>
+                    <div class="chart-title">Fluxo de Recebimentos (Ãºltimos 6 meses)</div>
                     <canvas id="chart-fluxo" height="300"></canvas>
                 </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
                     <div class="chart-card">
-                        <div class="chart-title">Distribuição de Empréstimos</div>
+                        <div class="chart-title">DistribuiÃ§Ã£o de EmprÃ©stimos</div>
                         <canvas id="chart-distribuicao" height="300"></canvas>
                     </div>
                     <div class="chart-card">
-                        <div class="chart-title">Clientes por Região</div>
+                        <div class="chart-title">Clientes por RegiÃ£o</div>
                         <canvas id="chart-regiao" height="300"></canvas>
                     </div>
                 </div>
@@ -924,17 +908,17 @@
 
             <!-- CLIENTES -->
             <div id="clientes" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Gestão de Clientes</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">GestÃ£o de Clientes</h2>
 
                 <div style="margin-bottom: 24px;">
                     <div style="display: flex; gap: 10px; align-items: center;">
-                        <input type="text" id="pesquisa-clientes" placeholder="🔍 Pesquisar cliente por nome, email ou telefone..." onkeyup="filtrarClientes()" style="flex: 1; padding: 12px 15px; border: 2px solid var(--border); border-radius: 8px; font-size: 14px; transition: border-color 0.3s;">
-                        <button class="btn-secondary" onclick="document.getElementById('pesquisa-clientes').value = ''; filtrarClientes()" style="padding: 12px 20px;">✕ Limpar</button>
+                        <input type="text" id="pesquisa-clientes" placeholder="ðŸ” Pesquisar cliente por nome, email ou telefone..." onkeyup="filtrarClientes()" style="flex: 1; padding: 12px 15px; border: 2px solid var(--border); border-radius: 8px; font-size: 14px; transition: border-color 0.3s;">
+                        <button class="btn-secondary" onclick="document.getElementById('pesquisa-clientes').value = ''; filtrarClientes()" style="padding: 12px 20px;">âœ• Limpar</button>
                     </div>
                 </div>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">➕ Novo Cliente</h3>
+                    <h3 style="margin-bottom: 20px;">âž• Novo Cliente</h3>
                     <form class="form-grid" onsubmit="addCliente(event)">
                         <div class="form-group">
                             <label>Nome Completo</label>
@@ -953,50 +937,50 @@
                             <input type="tel" id="cliente-whatsapp-novo" required>
                         </div>
                         <div class="form-group" style="grid-column: 1/-1;">
-                            <label>Endereço</label>
+                            <label>EndereÃ§o</label>
                             <input type="text" id="cliente-endereco-novo" required>
                         </div>
                         <button type="submit" class="btn-primary" style="grid-column: 1/-1;">Adicionar Cliente</button>
                     </form>
                 </div>
 
-                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">👥 Clientes Cadastrados</h3>
+                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">ðŸ‘¥ Clientes Cadastrados</h3>
                 <div class="items-grid" id="lista-clientes">
-                    <div class="item-card cliente-item" id="cliente-joao-silva" data-nome="João Silva" data-email="joao@example.com" data-telefone="(11) 99999-9999" onclick="abrirPerfilCliente('João Silva', 'joao@example.com', '(11) 99999-9999', '(11) 98888-8888')" style="cursor: pointer;">
-                        <div class="item-name">João Silva</div>
-                        <div class="item-detail">📧 joao@example.com</div>
-                        <div class="item-detail">📱 (11) 99999-9999</div>
-                        <div class="item-detail">💬 (11) 98888-8888</div>
-                        <span class="badge badge-success">✓ Ativo</span>
+                    <div class="item-card cliente-item" id="cliente-joao-silva" data-nome="JoÃ£o Silva" data-email="joao@example.com" data-telefone="(11) 99999-9999" onclick="abrirPerfilCliente('JoÃ£o Silva', 'joao@example.com', '(11) 99999-9999', '(11) 98888-8888')" style="cursor: pointer;">
+                        <div class="item-name">JoÃ£o Silva</div>
+                        <div class="item-detail">ðŸ“§ joao@example.com</div>
+                        <div class="item-detail">ðŸ“± (11) 99999-9999</div>
+                        <div class="item-detail">ðŸ’¬ (11) 98888-8888</div>
+                        <span class="badge badge-success">âœ“ Ativo</span>
                     </div>
                     <div class="item-card cliente-item" id="cliente-maria-santos" data-nome="Maria Santos" data-email="maria@example.com" data-telefone="(21) 99999-9999" onclick="abrirPerfilCliente('Maria Santos', 'maria@example.com', '(21) 99999-9999', '(21) 98888-8888')" style="cursor: pointer;">
                         <div class="item-name">Maria Santos</div>
-                        <div class="item-detail">📧 maria@example.com</div>
-                        <div class="item-detail">📱 (21) 99999-9999</div>
-                        <div class="item-detail">💬 (21) 98888-8888</div>
-                        <span class="badge badge-success">✓ Ativo</span>
+                        <div class="item-detail">ðŸ“§ maria@example.com</div>
+                        <div class="item-detail">ðŸ“± (21) 99999-9999</div>
+                        <div class="item-detail">ðŸ’¬ (21) 98888-8888</div>
+                        <span class="badge badge-success">âœ“ Ativo</span>
                     </div>
                     <div class="item-card cliente-item" id="cliente-pedro-costa" data-nome="Pedro Costa" data-email="pedro@example.com" data-telefone="(31) 99999-9999" onclick="abrirPerfilCliente('Pedro Costa', 'pedro@example.com', '(31) 99999-9999', '(31) 98888-8888')" style="cursor: pointer;">
                         <div class="item-name">Pedro Costa</div>
-                        <div class="item-detail">📧 pedro@example.com</div>
-                        <div class="item-detail">📱 (31) 99999-9999</div>
-                        <div class="item-detail">💬 (31) 98888-8888</div>
-                        <span class="badge badge-warning">⏳ Inativo</span>
+                        <div class="item-detail">ðŸ“§ pedro@example.com</div>
+                        <div class="item-detail">ðŸ“± (31) 99999-9999</div>
+                        <div class="item-detail">ðŸ’¬ (31) 98888-8888</div>
+                        <span class="badge badge-warning">â³ Inativo</span>
                     </div>
                 </div>
             </div>
 
-            <!-- EMPRÉSTIMOS -->
+            <!-- EMPRÃ‰STIMOS -->
             <div id="emprestimos" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Gestão de Empréstimos</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">GestÃ£o de EmprÃ©stimos</h2>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">➕ Novo Empréstimo</h3>
+                    <h3 style="margin-bottom: 20px;">âž• Novo EmprÃ©stimo</h3>
                     <form class="form-grid" onsubmit="addEmprestimo(event)">
                         <div class="form-group">
                             <label>Cliente</label>
                             <div style="position: relative;">
-                                <input type="text" id="busca-cliente-emprestimo" placeholder="🔍 Pesquisar cliente..."
+                                <input type="text" id="busca-cliente-emprestimo" placeholder="ðŸ” Pesquisar cliente..."
                                        style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px;"
                                        onkeyup="filtrarClientesEmprestimo()" onclick="abrirDropdownClientes()">
                                 <input type="hidden" id="cliente-selecionado-emprestimo" required>
@@ -1012,9 +996,9 @@
                             <input type="number" step="0.1" required>
                         </div>
                         <div class="form-group">
-                            <label>Período</label>
+                            <label>PerÃ­odo</label>
                             <select required>
-                                <option>Diário</option>
+                                <option>DiÃ¡rio</option>
                                 <option>Semanal</option>
                                 <option>Quinzenal</option>
                                 <option>Mensal</option>
@@ -1027,11 +1011,11 @@
                                 <option>Juros Compostos</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary" style="grid-column: 1/-1;">Criar Empréstimo</button>
+                        <button type="submit" class="btn-primary" style="grid-column: 1/-1;">Criar EmprÃ©stimo</button>
                     </form>
                 </div>
 
-                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">💰 Empréstimos Ativos</h3>
+                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">ðŸ’° EmprÃ©stimos Ativos</h3>
                 <div class="items-grid" id="lista-emprestimos"></div>
             </div>
 
@@ -1040,12 +1024,12 @@
                 <h2 style="font-size: 24px; margin-bottom: 24px;">Registro de Pagamentos</h2>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">💳 Registrar Novo Pagamento</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ’³ Registrar Novo Pagamento</h3>
                     <form class="form-grid" onsubmit="addPagamento(event)">
                         <div class="form-group" style="grid-column: 1/-1;">
-                            <label>Empréstimo</label>
+                            <label>EmprÃ©stimo</label>
                             <div style="position: relative;">
-                                <input type="text" id="busca-emprestimo-pagamento" placeholder="🔍 Pesquisar empréstimo..."
+                                <input type="text" id="busca-emprestimo-pagamento" placeholder="ðŸ” Pesquisar emprÃ©stimo..."
                                        style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px;"
                                        onkeyup="filtrarEmprestimosPagamento()" onclick="abrirDropdownEmprestimos()">
                                 <input type="hidden" id="emprestimo-selecionado-pagamento" required>
@@ -1061,11 +1045,11 @@
                             <input type="date" required>
                         </div>
                         <div class="form-group">
-                            <label>Método</label>
+                            <label>MÃ©todo</label>
                             <select required>
                                 <option>Dinheiro</option>
                                 <option>PIX</option>
-                                <option>Transferência</option>
+                                <option>TransferÃªncia</option>
                                 <option>Cheque</option>
                             </select>
                         </div>
@@ -1073,7 +1057,7 @@
                     </form>
                 </div>
 
-                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">📋 Últimos Pagamentos</h3>
+                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">ðŸ“‹ Ãšltimos Pagamentos</h3>
                 <div class="card">
                     <div class="table-container">
                         <table>
@@ -1082,13 +1066,13 @@
                                     <th>Cliente</th>
                                     <th>Valor</th>
                                     <th>Data</th>
-                                    <th>Método</th>
+                                    <th>MÃ©todo</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>João Silva</td>
+                                    <td>JoÃ£o Silva</td>
                                     <td>R$ 1.000,00</td>
                                     <td>08/10/2026</td>
                                     <td>PIX</td>
@@ -1098,7 +1082,7 @@
                                     <td>Maria Santos</td>
                                     <td>R$ 2.500,00</td>
                                     <td>07/10/2026</td>
-                                    <td>Transferência</td>
+                                    <td>TransferÃªncia</td>
                                     <td><span class="badge badge-success">Confirmado</span></td>
                                 </tr>
                                 <tr>
@@ -1114,15 +1098,15 @@
                 </div>
             </div>
 
-            <!-- COBRANÇAS -->
+            <!-- COBRANÃ‡AS -->
             <div id="cobrancas" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Sistema de Cobranças</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">Sistema de CobranÃ§as</h2>
 
                 <div class="alert alert-danger">
-                    <strong>⚠️ 3 Cobranças Pendentes</strong> - Você tem empréstimos vencidos ou próximos do vencimento
+                    <strong>âš ï¸ 3 CobranÃ§as Pendentes</strong> - VocÃª tem emprÃ©stimos vencidos ou prÃ³ximos do vencimento
                 </div>
 
-                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">🔔 Pendentes</h3>
+                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">ðŸ”” Pendentes</h3>
 
                 <div style="margin-bottom: 20px; display: flex; gap: 8px; flex-wrap: wrap;" id="filtro-alfabetico">
                     <button class="btn-filter active" onclick="filtrarPorLetra('TODOS')" style="background: var(--primary); color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">TODOS</button>
@@ -1134,32 +1118,32 @@
                         <div class="item-detail">Vencimento: 05/10/2026</div>
                         <div class="item-detail">Atraso: 5 dias</div>
                         <div class="item-detail">Valor devido: R$ 8.160 (com juros)</div>
-                        <span class="badge badge-danger">🚨 Urgente</span>
+                        <span class="badge badge-danger">ðŸš¨ Urgente</span>
                         <div style="margin-top: 10px; display: flex; gap: 8px;">
-                            <button class="btn-small" onclick="enviarEmail('Pedro Costa', 'pedro@example.com')">📧 Enviar Email</button>
-                            <button class="btn-small" onclick="enviarWhatsApp('Pedro Costa', '(31) 99999-9999')">💬 WhatsApp</button>
+                            <button class="btn-small" onclick="enviarEmail('Pedro Costa', 'pedro@example.com')">ðŸ“§ Enviar Email</button>
+                            <button class="btn-small" onclick="enviarWhatsApp('Pedro Costa', '(31) 99999-9999')">ðŸ’¬ WhatsApp</button>
                         </div>
                     </div>
                     <div class="item-card" style="border-left: 4px solid var(--warning);">
                         <div class="item-name">Maria Santos - R$ 5.000</div>
                         <div class="item-detail">Vencimento: 20/10/2026</div>
-                        <div class="item-detail">Dias até vencimento: 10 dias</div>
+                        <div class="item-detail">Dias atÃ© vencimento: 10 dias</div>
                         <div class="item-detail">Valor a cobrar: R$ 5.200 (com juros)</div>
-                        <span class="badge badge-warning">⏳ Próximo vencimento</span>
+                        <span class="badge badge-warning">â³ PrÃ³ximo vencimento</span>
                         <div style="margin-top: 10px; display: flex; gap: 8px;">
-                            <button class="btn-small" onclick="enviarEmail('Maria Santos', 'maria@example.com')">📧 Enviar Email</button>
-                            <button class="btn-small" onclick="enviarWhatsApp('Maria Santos', '(21) 99999-9999')">💬 WhatsApp</button>
+                            <button class="btn-small" onclick="enviarEmail('Maria Santos', 'maria@example.com')">ðŸ“§ Enviar Email</button>
+                            <button class="btn-small" onclick="enviarWhatsApp('Maria Santos', '(21) 99999-9999')">ðŸ’¬ WhatsApp</button>
                         </div>
                     </div>
                     <div class="item-card" style="border-left: 4px solid var(--warning);">
-                        <div class="item-name">João Silva - R$ 2.500</div>
+                        <div class="item-name">JoÃ£o Silva - R$ 2.500</div>
                         <div class="item-detail">Vencimento: 15/10/2026</div>
-                        <div class="item-detail">Dias até vencimento: 5 dias</div>
+                        <div class="item-detail">Dias atÃ© vencimento: 5 dias</div>
                         <div class="item-detail">Valor a cobrar: R$ 2.550 (com juros)</div>
-                        <span class="badge badge-warning">⏳ Próximo vencimento</span>
+                        <span class="badge badge-warning">â³ PrÃ³ximo vencimento</span>
                         <div style="margin-top: 10px; display: flex; gap: 8px;">
-                            <button class="btn-small" onclick="enviarEmail('João Silva', 'joao@example.com')">📧 Enviar Email</button>
-                            <button class="btn-small" onclick="enviarWhatsApp('João Silva', '(11) 99999-9999')">💬 WhatsApp</button>
+                            <button class="btn-small" onclick="enviarEmail('JoÃ£o Silva', 'joao@example.com')">ðŸ“§ Enviar Email</button>
+                            <button class="btn-small" onclick="enviarWhatsApp('JoÃ£o Silva', '(11) 99999-9999')">ðŸ’¬ WhatsApp</button>
                         </div>
                     </div>
                 </div>
@@ -1167,12 +1151,12 @@
 
             <!-- PERFIL DO CLIENTE -->
             <div id="perfilCliente" class="page hidden">
-                <button class="btn-secondary" onclick="showPage('clientes')" style="margin-bottom: 20px;">← Voltar</button>
+                <button class="btn-secondary" onclick="showPage('clientes')" style="margin-bottom: 20px;">â† Voltar</button>
 
                 <h2 style="font-size: 24px; margin-bottom: 20px;" id="cliente-nome">Perfil do Cliente</h2>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">👤 Informações Pessoais</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ‘¤ InformaÃ§Ãµes Pessoais</h3>
                     <div style="display: grid; gap: 15px;">
                         <div>
                             <p style="color: var(--text-secondary); font-size: 13px;">Email</p>
@@ -1190,22 +1174,22 @@
                 </div>
 
                 <div class="form-card" style="margin-top: 30px;">
-                    <h3 style="margin-bottom: 20px;">💰 Empréstimos</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ’° EmprÃ©stimos</h3>
                     <div id="cliente-emprestimos" style="display: grid; gap: 15px;">
-                        <p style="color: var(--text-secondary);">Nenhum empréstimo encontrado</p>
+                        <p style="color: var(--text-secondary);">Nenhum emprÃ©stimo encontrado</p>
                     </div>
-                    <button class="btn-primary" onclick="novoEmprestimoCliente()" style="margin-top: 20px; width: 100%;">➕ Adicionar Novo Empréstimo</button>
+                    <button class="btn-primary" onclick="novoEmprestimoCliente()" style="margin-top: 20px; width: 100%;">âž• Adicionar Novo EmprÃ©stimo</button>
                 </div>
 
                 <div class="form-card" style="margin-top: 30px;">
-                    <h3 style="margin-bottom: 20px;">💳 Histórico de Pagamentos</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ’³ HistÃ³rico de Pagamentos</h3>
                     <div id="cliente-pagamentos" style="display: grid; gap: 15px;">
                         <p style="color: var(--text-secondary);">Nenhum pagamento registrado</p>
                     </div>
                 </div>
 
                 <div class="form-card" style="margin-top: 30px;">
-                    <h3 style="margin-bottom: 20px;">📊 Resumo Financeiro</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ“Š Resumo Financeiro</h3>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                         <div>
                             <p style="color: var(--text-secondary); font-size: 13px;">Total Emprestado</p>
@@ -1219,11 +1203,11 @@
                 </div>
             </div>
 
-            <!-- NOVO EMPRÉSTIMO -->
+            <!-- NOVO EMPRÃ‰STIMO -->
             <div id="novoEmprestimo" class="page hidden">
-                <button class="btn-secondary" onclick="showPage('perfilCliente')" style="margin-bottom: 20px;">← Voltar</button>
+                <button class="btn-secondary" onclick="showPage('perfilCliente')" style="margin-bottom: 20px;">â† Voltar</button>
 
-                <h2 style="font-size: 24px; margin-bottom: 24px;">➕ Novo Empréstimo</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">âž• Novo EmprÃ©stimo</h2>
 
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px;">Dados do Cliente</h3>
@@ -1244,10 +1228,10 @@
                 </div>
 
                 <div class="form-card" style="margin-top: 20px;">
-                    <h3 style="margin-bottom: 20px;">Detalhes do Empréstimo</h3>
+                    <h3 style="margin-bottom: 20px;">Detalhes do EmprÃ©stimo</h3>
                     <div class="form-grid">
                         <div class="form-group">
-                            <label>Valor do Empréstimo</label>
+                            <label>Valor do EmprÃ©stimo</label>
                             <input type="number" id="novo-valor" placeholder="Ex: 5000" step="0.01" min="0">
                         </div>
                         <div class="form-group">
@@ -1265,7 +1249,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Data do Empréstimo</label>
+                            <label>Data do EmprÃ©stimo</label>
                             <input type="date" id="novo-data" value="2026-10-10">
                         </div>
                     </div>
@@ -1276,22 +1260,22 @@
                     </div>
 
                     <div style="display: grid; gap: 10px; grid-template-columns: 1fr 1fr; margin-top: 20px;">
-                        <button class="btn-secondary" onclick="showPage('perfilCliente')">❌ Cancelar</button>
-                        <button class="btn-primary" onclick="salvarNovoEmprestimo()">💾 Criar Empréstimo</button>
+                        <button class="btn-secondary" onclick="showPage('perfilCliente')">âŒ Cancelar</button>
+                        <button class="btn-primary" onclick="salvarNovoEmprestimo()">ðŸ’¾ Criar EmprÃ©stimo</button>
                     </div>
                 </div>
             </div>
 
-            <!-- CALENDÁRIO -->
+            <!-- CALENDÃRIO -->
             <div id="calendario" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Calendário de Vencimentos</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">CalendÃ¡rio de Vencimentos</h2>
 
                 <div class="card">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
                         <h3 id="calendar-month" style="font-size: 18px; font-weight: 600;">Outubro 2026</h3>
                         <div>
-                            <button class="btn-secondary" style="margin-right: 8px;" onclick="prevMonth()">← Anterior</button>
-                            <button class="btn-secondary" onclick="nextMonth()">Próximo →</button>
+                            <button class="btn-secondary" style="margin-right: 8px;" onclick="prevMonth()">â† Anterior</button>
+                            <button class="btn-secondary" onclick="nextMonth()">PrÃ³ximo â†’</button>
                         </div>
                     </div>
 
@@ -1308,7 +1292,7 @@
                     <div id="calendar-grid" class="calendar"></div>
                 </div>
 
-                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">📅 Eventos do Mês</h3>
+                <h3 style="font-size: 18px; margin: 30px 0 20px 0;">ðŸ“… Eventos do MÃªs</h3>
 
                 <div style="margin-bottom: 20px; display: flex; gap: 8px; flex-wrap: wrap;" id="filtro-alfabetico-calendario">
                     <button class="btn-filter active" onclick="filtrarEventosPorLetra('TODOS')" style="background: var(--primary); color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">TODOS</button>
@@ -1316,56 +1300,56 @@
 
                 <div class="items-grid" id="eventos-calendario">
                     <div class="item-card" data-cliente="Pedro Costa">
-                        <div class="item-name">🔔 05/10 - Vencimento Pedro Costa</div>
-                        <div class="item-detail">Empréstimo de R$ 8.000</div>
-                        <div class="item-detail">Status: <strong>⚠️ Atrasado</strong></div>
+                        <div class="item-name">ðŸ”” 05/10 - Vencimento Pedro Costa</div>
+                        <div class="item-detail">EmprÃ©stimo de R$ 8.000</div>
+                        <div class="item-detail">Status: <strong>âš ï¸ Atrasado</strong></div>
                     </div>
-                    <div class="item-card" data-cliente="João Silva">
-                        <div class="item-name">🔔 15/10 - Vencimento João Silva</div>
-                        <div class="item-detail">Empréstimo de R$ 2.500</div>
-                        <div class="item-detail">Status: <strong>⏳ Próximo</strong></div>
+                    <div class="item-card" data-cliente="JoÃ£o Silva">
+                        <div class="item-name">ðŸ”” 15/10 - Vencimento JoÃ£o Silva</div>
+                        <div class="item-detail">EmprÃ©stimo de R$ 2.500</div>
+                        <div class="item-detail">Status: <strong>â³ PrÃ³ximo</strong></div>
                     </div>
                     <div class="item-card" data-cliente="Maria Santos">
-                        <div class="item-name">🔔 20/10 - Vencimento Maria Santos</div>
-                        <div class="item-detail">Empréstimo de R$ 5.000</div>
-                        <div class="item-detail">Status: <strong>⏳ Próximo</strong></div>
+                        <div class="item-name">ðŸ”” 20/10 - Vencimento Maria Santos</div>
+                        <div class="item-detail">EmprÃ©stimo de R$ 5.000</div>
+                        <div class="item-detail">Status: <strong>â³ PrÃ³ximo</strong></div>
                     </div>
                 </div>
             </div>
 
-            <!-- RELATÓRIOS -->
+            <!-- RELATÃ“RIOS -->
             <div id="relatorios" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Relatórios e Análises</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">RelatÃ³rios e AnÃ¡lises</h2>
 
                 <div class="chart-card">
-                    <div class="chart-title">📊 Receita Mensal (últimos 6 meses)</div>
+                    <div class="chart-title">ðŸ“Š Receita Mensal (Ãºltimos 6 meses)</div>
                     <canvas id="chart-receita" height="300"></canvas>
                 </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
                     <div class="chart-card">
-                        <div class="chart-title">📈 Status dos Empréstimos</div>
+                        <div class="chart-title">ðŸ“ˆ Status dos EmprÃ©stimos</div>
                         <canvas id="chart-status" height="300"></canvas>
                     </div>
                     <div class="chart-card">
-                        <div class="chart-title">💰 Rentabilidade por Cliente</div>
+                        <div class="chart-title">ðŸ’° Rentabilidade por Cliente</div>
                         <canvas id="chart-rentabilidade" height="300"></canvas>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3 style="margin-bottom: 20px; font-size: 16px; font-weight: 600;">📥 Exportar Relatório</h3>
+                    <h3 style="margin-bottom: 20px; font-size: 16px; font-weight: 600;">ðŸ“¥ Exportar RelatÃ³rio</h3>
                     <div style="display: flex; gap: 10px;">
-                        <button class="btn-secondary" onclick="exportToCSV()">📊 Exportar para CSV</button>
-                        <button class="btn-secondary" onclick="exportToPDF()">📄 Exportar para PDF</button>
-                        <button class="btn-secondary" onclick="exportToExcel()">📋 Exportar para Excel</button>
+                        <button class="btn-secondary" onclick="exportToCSV()">ðŸ“Š Exportar para CSV</button>
+                        <button class="btn-secondary" onclick="exportToPDF()">ðŸ“„ Exportar para PDF</button>
+                        <button class="btn-secondary" onclick="exportToExcel()">ðŸ“‹ Exportar para Excel</button>
                     </div>
                 </div>
             </div>
 
             <!-- PERFIL -->
             <div id="perfil" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">👤 Meu Perfil</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">ðŸ‘¤ Meu Perfil</h2>
 
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px;">Dados Pessoais</h3>
@@ -1383,35 +1367,35 @@
                                 <input type="email" id="profile-email" placeholder="seu@email.com">
                             </div>
                             <div class="form-group">
-                                <label>📧 Recuperação de Email 1</label>
-                                <input type="email" id="profile-recovery-email-1" placeholder="Email de recuperação (opcional)">
+                                <label>ðŸ“§ RecuperaÃ§Ã£o de Email 1</label>
+                                <input type="email" id="profile-recovery-email-1" placeholder="Email de recuperaÃ§Ã£o (opcional)">
                             </div>
                             <div class="form-group">
-                                <label>📧 Recuperação de Email 2</label>
-                                <input type="email" id="profile-recovery-email-2" placeholder="Email de recuperação adicional (opcional)">
+                                <label>ðŸ“§ RecuperaÃ§Ã£o de Email 2</label>
+                                <input type="email" id="profile-recovery-email-2" placeholder="Email de recuperaÃ§Ã£o adicional (opcional)">
                             </div>
                             <div class="form-group">
-                                <label>📱 Telefone</label>
+                                <label>ðŸ“± Telefone</label>
                                 <input type="tel" id="profile-phone" placeholder="(11) 99999-9999">
                             </div>
                             <div class="form-group">
-                                <label>💬 WhatsApp</label>
+                                <label>ðŸ’¬ WhatsApp</label>
                                 <input type="tel" id="profile-whatsapp" placeholder="(11) 99999-9999">
                             </div>
-                            <button class="btn-primary" onclick="updateProfile()" style="margin-top: 15px;">💾 Salvar Alterações</button>
+                            <button class="btn-primary" onclick="updateProfile()" style="margin-top: 15px;">ðŸ’¾ Salvar AlteraÃ§Ãµes</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-card" style="margin-top: 30px;">
-                    <h3 style="margin-bottom: 15px;">Informações da Conta</h3>
+                    <h3 style="margin-bottom: 15px;">InformaÃ§Ãµes da Conta</h3>
                     <div style="display: grid; gap: 15px;">
                         <div>
-                            <p style="color: var(--text-secondary); font-size: 13px;">Data de criação da conta</p>
+                            <p style="color: var(--text-secondary); font-size: 13px;">Data de criaÃ§Ã£o da conta</p>
                             <p style="font-weight: 600;" id="profile-created">Carregando...</p>
                         </div>
                         <div>
-                            <p style="color: var(--text-secondary); font-size: 13px;">Último acesso</p>
+                            <p style="color: var(--text-secondary); font-size: 13px;">Ãšltimo acesso</p>
                             <p style="font-weight: 600;" id="profile-last-access">Hoje</p>
                         </div>
                     </div>
@@ -1425,26 +1409,26 @@
                     </div>
                     <div class="form-group">
                         <label>Nova Senha</label>
-                        <input type="password" id="new-password" placeholder="Nova senha (mínimo 6 caracteres)" minlength="6">
+                        <input type="password" id="new-password" placeholder="Nova senha (mÃ­nimo 6 caracteres)" minlength="6">
                     </div>
                     <div class="form-group">
                         <label>Confirmar Senha</label>
                         <input type="password" id="confirm-password" placeholder="Confirme a nova senha" minlength="6">
                     </div>
-                    <button class="btn-primary" onclick="changePassword()" style="margin-top: 15px;">🔐 Alterar Senha</button>
+                    <button class="btn-primary" onclick="changePassword()" style="margin-top: 15px;">ðŸ” Alterar Senha</button>
                 </div>
             </div>
 
-            <!-- CONFIGURAÇÕES -->
+            <!-- CONFIGURAÃ‡Ã•ES -->
             <div id="configuracoes" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">Configurações</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">ConfiguraÃ§Ãµes</h2>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">Informações da Empresa</h3>
+                    <h3 style="margin-bottom: 20px;">InformaÃ§Ãµes da Empresa</h3>
                     <form class="form-grid" onsubmit="saveConfig(event)">
                         <div class="form-group" style="grid-column: 1/-1;">
                             <label>Nome da Empresa</label>
-                            <input type="text" value="Gil.Finanças">
+                            <input type="text" value="Gil.FinanÃ§as">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
@@ -1455,54 +1439,54 @@
                             <input type="tel" value="(11) 98888-8888">
                         </div>
                         <div class="form-group" style="grid-column: 1/-1;">
-                            <label>Endereço</label>
-                            <input type="text" value="São Paulo, SP">
+                            <label>EndereÃ§o</label>
+                            <input type="text" value="SÃ£o Paulo, SP">
                         </div>
-                        <button type="submit" class="btn-primary" style="grid-column: 1/-1;">💾 Salvar Configurações</button>
+                        <button type="submit" class="btn-primary" style="grid-column: 1/-1;">ðŸ’¾ Salvar ConfiguraÃ§Ãµes</button>
                     </form>
                 </div>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">📷 Foto de Perfil</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 15px;">Adicione uma foto para seu perfil (aparecerá no logo e na area do perfil)</p>
+                    <h3 style="margin-bottom: 20px;">ðŸ“· Foto de Perfil</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 15px;">Adicione uma foto para seu perfil (aparecerÃ¡ no logo e na area do perfil)</p>
                     <div style="display: flex; gap: 15px; flex-direction: column;">
-                        <button onclick="fazerUploadFoto()" style="padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">📸 Fazer Upload da Foto</button>
-                        <button onclick="removerFotoPerfil()" style="padding: 12px 20px; background: #EF4444; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">🗑️ Remover Foto</button>
+                        <button onclick="fazerUploadFoto()" style="padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">ðŸ“¸ Fazer Upload da Foto</button>
+                        <button onclick="removerFotoPerfil()" style="padding: 12px 20px; background: #EF4444; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">ðŸ—‘ï¸ Remover Foto</button>
                     </div>
                 </div>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">Notificações</h3>
+                    <h3 style="margin-bottom: 20px;">NotificaÃ§Ãµes</h3>
                     <div style="display: flex; gap: 20px; flex-direction: column;">
                         <label style="display: flex; gap: 10px; cursor: pointer;">
-                            <input type="checkbox" id="notifCobrancaVencida" checked onchange="salvarNotificacoes()"> Avisar quando houver cobrança vencida
+                            <input type="checkbox" id="notifCobrancaVencida" checked onchange="salvarNotificacoes()"> Avisar quando houver cobranÃ§a vencida
                         </label>
                         <label style="display: flex; gap: 10px; cursor: pointer;">
                             <input type="checkbox" id="notif3DiasAntes" checked onchange="salvarNotificacoes()"> Avisar 3 dias antes de vencer
                         </label>
                         <label style="display: flex; gap: 10px; cursor: pointer;">
-                            <input type="checkbox" id="notifEmailSemanal" onchange="salvarNotificacoes()"> Enviar relatório semanal por email
+                            <input type="checkbox" id="notifEmailSemanal" onchange="salvarNotificacoes()"> Enviar relatÃ³rio semanal por email
                         </label>
                         <label style="display: flex; gap: 10px; cursor: pointer;">
-                            <input type="checkbox" id="notifWhatsappSemanal" checked onchange="salvarNotificacoes()"> Enviar relatório semanal por WhatsApp
+                            <input type="checkbox" id="notifWhatsappSemanal" checked onchange="salvarNotificacoes()"> Enviar relatÃ³rio semanal por WhatsApp
                         </label>
                     </div>
                 </div>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">📊 Importar/Exportar Planilha de Clientes</h3>
+                    <h3 style="margin-bottom: 20px;">ðŸ“Š Importar/Exportar Planilha de Clientes</h3>
                     <div style="display: flex; gap: 20px; flex-direction: column;">
                         <div>
-                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">📥 Importar Planilha (CSV ou Excel)</label>
+                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">ðŸ“¥ Importar Planilha (CSV ou Excel)</label>
                             <input type="file" id="importarPlanilha" accept=".csv,.xlsx,.xls" style="padding: 10px; border: 1px solid var(--border); border-radius: 8px; width: 100%; cursor: pointer;">
-                            <button onclick="importarClientes()" style="margin-top: 10px; padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">📤 Importar Clientes</button>
+                            <button onclick="importarClientes()" style="margin-top: 10px; padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">ðŸ“¤ Importar Clientes</button>
                             <p id="statusImportacao" style="margin-top: 10px; font-size: 14px; color: var(--text-secondary);"></p>
                         </div>
                         <div style="border-top: 1px solid var(--border); padding-top: 20px;">
-                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">📥 Exportar Planilha (com todos os clientes)</label>
-                            <button onclick="exportarClientesExcel()" style="padding: 12px 20px; background: #059669; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">📈 Exportar como Excel</button>
-                            <button onclick="exportarClientesCSV()" style="padding: 12px 20px; background: #2D9E7B; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">📊 Exportar como CSV</button>
-                            <button onclick="exportarClientesJSON()" style="padding: 12px 20px; background: #10B981; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">💾 Exportar como JSON</button>
+                            <label style="display: block; margin-bottom: 10px; font-weight: 600;">ðŸ“¥ Exportar Planilha (com todos os clientes)</label>
+                            <button onclick="exportarClientesExcel()" style="padding: 12px 20px; background: #059669; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">ðŸ“ˆ Exportar como Excel</button>
+                            <button onclick="exportarClientesCSV()" style="padding: 12px 20px; background: #2D9E7B; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">ðŸ“Š Exportar como CSV</button>
+                            <button onclick="exportarClientesJSON()" style="padding: 12px 20px; background: #10B981; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">ðŸ’¾ Exportar como JSON</button>
                             <p id="statusExportacao" style="margin-top: 10px; font-size: 14px; color: var(--text-secondary);"></p>
                         </div>
                     </div>
@@ -1511,19 +1495,19 @@
 
             <!-- EDITOR DE CORES -->
             <div id="editor-cores" class="page hidden">
-                <h2 style="font-size: 24px; margin-bottom: 24px;">🎨 Editor de Cores</h2>
+                <h2 style="font-size: 24px; margin-bottom: 24px;">ðŸŽ¨ Editor de Cores</h2>
                 <p style="color: var(--text-secondary); margin-bottom: 20px;">Personalize as cores do aplicativo:</p>
 
                 <div class="form-card">
                     <h3 style="margin-bottom: 20px;">Cores Principais</h3>
                     <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
                         <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Cor Primária</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Cor PrimÃ¡ria</label>
                             <input type="color" id="corPrimaria" style="width: 100%; height: 50px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;" onchange="salvarCores()">
                             <p id="corPrimariaHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
                         <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Cor Primária Clara</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Cor PrimÃ¡ria Clara</label>
                             <input type="color" id="corPrimariaClara" style="width: 100%; height: 50px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;" onchange="salvarCores()">
                             <p id="corPrimariaClaraHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
@@ -1559,7 +1543,7 @@
                             <p id="corFundoSidebarHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
                         <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Fundo do Conteúdo</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Fundo do ConteÃºdo</label>
                             <input type="color" id="corFundoConteudo" style="width: 100%; height: 50px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;" onchange="salvarCores()">
                             <p id="corFundoConteudoHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
@@ -1575,7 +1559,7 @@
                             <p id="corTextoSidebarHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
                         <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Texto do Conteúdo</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Texto do ConteÃºdo</label>
                             <input type="color" id="corTextoConteudo" style="width: 100%; height: 50px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer;" onchange="salvarCores()">
                             <p id="corTextoConteudoHex" style="font-size: 12px; color: var(--text-secondary); margin-top: 5px;"></p>
                         </div>
@@ -1583,35 +1567,35 @@
                 </div>
 
                 <div class="form-card">
-                    <h3 style="margin-bottom: 20px;">Ações</h3>
-                    <button onclick="restaurarCoresDefault()" style="padding: 12px 20px; background: #6B7280; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">🔄 Restaurar Padrão</button>
-                    <button onclick="atualizarPreview()" style="padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">✅ Aplicar Cores</button>
+                    <h3 style="margin-bottom: 20px;">AÃ§Ãµes</h3>
+                    <button onclick="restaurarCoresDefault()" style="padding: 12px 20px; background: #6B7280; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; margin-right: 10px;">ðŸ”„ Restaurar PadrÃ£o</button>
+                    <button onclick="atualizarPreview()" style="padding: 12px 20px; background: #1B7F5E; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">âœ… Aplicar Cores</button>
                 </div>
 
                 <div style="margin-top: 30px; padding: 20px; background: var(--bg-gray); border-radius: 8px;">
-                    <p style="font-size: 14px; color: var(--text-secondary);">As cores serão salvas automaticamente e aplicadas ao recarregar a página.</p>
+                    <p style="font-size: 14px; color: var(--text-secondary);">As cores serÃ£o salvas automaticamente e aplicadas ao recarregar a pÃ¡gina.</p>
                 </div>
             </div>
 
             <!-- MODAL ENVIO -->
             <div id="modalEnvio" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
                 <div style="background: white; padding: 30px; border-radius: 12px; max-width: 500px; width: 90%; box-shadow: 0 10px 40px rgba(0,0,0,0.2);">
-                    <h3 id="modalTitulo" style="margin-bottom: 20px; font-size: 20px;">📧 Enviar Email</h3>
+                    <h3 id="modalTitulo" style="margin-bottom: 20px; font-size: 20px;">ðŸ“§ Enviar Email</h3>
                     <p id="modalCliente" style="margin-bottom: 20px; color: var(--text-secondary);">Cliente: Pedro Costa</p>
 
                     <div style="display: grid; gap: 12px; margin-bottom: 20px;">
-                        <button onclick="selecionarOpcaoEnvio('agora')" style="padding: 15px; background: #28a745; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">✅ Enviar Agora</button>
-                        <button onclick="selecionarOpcaoEnvio('agendar')" style="padding: 15px; background: #007bff; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">⏰ Agendar Automático</button>
-                        <button onclick="fecharModalEnvio()" style="padding: 15px; background: var(--border); color: var(--text-primary); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">❌ Cancelar</button>
+                        <button onclick="selecionarOpcaoEnvio('agora')" style="padding: 15px; background: #28a745; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">âœ… Enviar Agora</button>
+                        <button onclick="selecionarOpcaoEnvio('agendar')" style="padding: 15px; background: #007bff; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">â° Agendar AutomÃ¡tico</button>
+                        <button onclick="fecharModalEnvio()" style="padding: 15px; background: var(--border); color: var(--text-primary); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 16px;">âŒ Cancelar</button>
                     </div>
 
                     <div id="panelAgendamento" style="display: none; border-top: 1px solid var(--border); padding-top: 20px;">
                         <h4 style="margin-bottom: 15px;">Configurar Agendamento</h4>
 
                         <div style="margin-bottom: 15px;">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Frequência:</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">FrequÃªncia:</label>
                             <select id="selectFrequencia" style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px;">
-                                <option value="diario">Diário</option>
+                                <option value="diario">DiÃ¡rio</option>
                                 <option value="semanal">Semanal</option>
                                 <option value="quinzenal">Quinzenal</option>
                                 <option value="mensal">Mensal</option>
@@ -1619,7 +1603,7 @@
                         </div>
 
                         <div style="margin-bottom: 15px;">
-                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Horário (HH:MM):</label>
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">HorÃ¡rio (HH:MM):</label>
                             <input type="time" id="inputHora" value="09:00" style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 6px;">
                         </div>
 
@@ -1645,7 +1629,7 @@
             document.getElementById('login-form').classList.toggle('hidden');
             document.getElementById('register-form').classList.toggle('hidden');
             document.getElementById('forgot-password-form').classList.add('hidden');
-            // Limpar formulários
+            // Limpar formulÃ¡rios
             document.getElementById('email').value = '';
             document.getElementById('senha').value = '';
             document.getElementById('reg-name').value = '';
@@ -1674,15 +1658,15 @@
 
                 if (!response.ok) {
                     const error = await response.json();
-                    alert('❌ ' + (error.message || 'Email não encontrado'));
+                    alert('âŒ ' + (error.message || 'Email nÃ£o encontrado'));
                     return;
                 }
 
-                alert('✅ Código enviado! Verifique seu e-mail de recuperação.');
+                alert('âœ… CÃ³digo enviado! Verifique seu e-mail de recuperaÃ§Ã£o.');
                 document.getElementById('forgot-form').classList.add('hidden');
                 document.getElementById('reset-code-section').classList.remove('hidden');
             } catch (error) {
-                alert('❌ Erro: ' + error.message);
+                alert('âŒ Erro: ' + error.message);
             }
         }
 
@@ -1694,7 +1678,7 @@
             const confirmPassword = document.getElementById('reset-password-confirm').value;
 
             if (newPassword !== confirmPassword) {
-                alert('❌ As senhas não correspondem');
+                alert('âŒ As senhas nÃ£o correspondem');
                 return;
             }
 
@@ -1707,17 +1691,17 @@
 
                 if (!response.ok) {
                     const error = await response.json();
-                    alert('❌ ' + (error.message || 'Código inválido'));
+                    alert('âŒ ' + (error.message || 'CÃ³digo invÃ¡lido'));
                     return;
                 }
 
-                alert('✅ Senha resetada com sucesso! Faça login com sua nova senha.');
+                alert('âœ… Senha resetada com sucesso! FaÃ§a login com sua nova senha.');
                 toggleForgotPassword();
                 document.getElementById('email').value = email;
                 document.getElementById('senha').focus();
                 document.getElementById('forgot-form').classList.remove('hidden');
             } catch (error) {
-                alert('❌ Erro: ' + error.message);
+                alert('âŒ Erro: ' + error.message);
             }
         }
 
@@ -1752,16 +1736,16 @@
 
                 if (!response.ok) {
                     const error = await response.json();
-                    alert('❌ Erro ao registrar: ' + (error.message || 'Tente novamente'));
+                    alert('âŒ Erro ao registrar: ' + (error.message || 'Tente novamente'));
                     return;
                 }
 
-                alert('✅ Registro realizado com sucesso! Agora faça login.');
+                alert('âœ… Registro realizado com sucesso! Agora faÃ§a login.');
                 toggleRegister();
                 document.getElementById('email').value = email;
                 document.getElementById('senha').focus();
             } catch (error) {
-                alert('❌ Erro de conexão. Certifique-se que o servidor está rodando em http://localhost:5000');
+                alert('âŒ Erro de conexÃ£o. Certifique-se que o servidor estÃ¡ rodando em http://localhost:5000');
                 console.error(error);
             }
         }
@@ -1782,7 +1766,7 @@
 
                 if (!response.ok) {
                     const error = await response.json();
-                    alert('❌ Falha no login: ' + (error.message || 'Email ou senha incorretos'));
+                    alert('âŒ Falha no login: ' + (error.message || 'Email ou senha incorretos'));
                     return;
                 }
 
@@ -1796,13 +1780,13 @@
                 setTimeout(async () => {
                     await carregarDadosDoServidor(data.token);
 
-                    // Se não houver clientes após carregar, carregar dados de teste
+                    // Se nÃ£o houver clientes apÃ³s carregar, carregar dados de teste
                     const clientes = JSON.parse(localStorage.getItem('clientes') || '[]');
                     if (clientes.length === 0) {
                         const dadosTeste = {
                             clientes: [
-                                {id: 1, nome: "Ana Silva", email: "ana@example.com", telefone: "(11) 91234-5678", whatsapp: "(11) 91234-5678", endereco: "Rua das Flores, 123 - São Paulo, SP", status: "Ativo"},
-                                {id: 2, nome: "Bruno Costa", email: "bruno@example.com", telefone: "(21) 98765-4321", whatsapp: "(21) 98765-4321", endereco: "Av. Paulista, 456 - São Paulo, SP", status: "Ativo"},
+                                {id: 1, nome: "Ana Silva", email: "ana@example.com", telefone: "(11) 91234-5678", whatsapp: "(11) 91234-5678", endereco: "Rua das Flores, 123 - SÃ£o Paulo, SP", status: "Ativo"},
+                                {id: 2, nome: "Bruno Costa", email: "bruno@example.com", telefone: "(21) 98765-4321", whatsapp: "(21) 98765-4321", endereco: "Av. Paulista, 456 - SÃ£o Paulo, SP", status: "Ativo"},
                                 {id: 3, nome: "Carla Oliveira", email: "carla@example.com", telefone: "(31) 99876-5432", whatsapp: "(31) 99876-5432", endereco: "Rua Minas Gerais, 789 - Belo Horizonte, MG", status: "Ativo"},
                                 {id: 4, nome: "Diego Santos", email: "diego@example.com", telefone: "(41) 97654-3210", whatsapp: "(41) 97654-3210", endereco: "Av. Brasil, 321 - Curitiba, PR", status: "Ativo"},
                                 {id: 5, nome: "Elena Martins", email: "elena@example.com", telefone: "(51) 98543-2109", whatsapp: "(51) 98543-2109", endereco: "Rua Rio Grande, 654 - Porto Alegre, RS", status: "Ativo"}
@@ -1830,7 +1814,7 @@
                 updateDate();
                 renderCalendar();
             } catch (error) {
-                alert('❌ Erro de conexão. Certifique-se que o servidor está rodando em http://localhost:5000');
+                alert('âŒ Erro de conexÃ£o. Certifique-se que o servidor estÃ¡ rodando em http://localhost:5000');
                 console.error(error);
             }
         }
@@ -1877,7 +1861,7 @@
             document.getElementById(pageName).classList.remove('hidden');
             document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
 
-            // Apenas tenta ativar o nav-link se event está definido
+            // Apenas tenta ativar o nav-link se event estÃ¡ definido
             if (event && event.target) {
                 const navLink = event.target.closest('.nav-link');
                 if (navLink) navLink.classList.add('active');
@@ -1935,7 +1919,7 @@
             const emprestimos = JSON.parse(localStorage.getItem('emprestimos') || '[]');
             const pagamentos = JSON.parse(localStorage.getItem('pagamentos') || '[]');
 
-            // Calcular status dos empréstimos
+            // Calcular status dos emprÃ©stimos
             let ativosCount = emprestimos.length;
             let pagosCount = pagamentos.length > 0 ? Math.floor(emprestimos.length * 0.3) : 0;
             let vencidosCount = emprestimos.length > 0 ? Math.floor(emprestimos.length * 0.1) : 0;
@@ -1973,7 +1957,7 @@
                 });
             }
 
-            // Chart 2: Distribuição
+            // Chart 2: DistribuiÃ§Ã£o
             const ctx2 = document.getElementById('chart-distribuicao')?.getContext('2d');
             if (ctx2) {
                 if (charts.dist) charts.dist.destroy();
@@ -1987,14 +1971,14 @@
                 });
             }
 
-            // Chart 3: Região
+            // Chart 3: RegiÃ£o
             const ctx3 = document.getElementById('chart-regiao')?.getContext('2d');
             if (ctx3) {
                 if (charts.regiao) charts.regiao.destroy();
                 charts.regiao = new Chart(ctx3, {
                     type: 'doughnut',
                     data: {
-                        labels: ['São Paulo', 'Rio de Janeiro', 'MG', 'Outros'],
+                        labels: ['SÃ£o Paulo', 'Rio de Janeiro', 'MG', 'Outros'],
                         datasets: [{ data: [40, 35, 15, 10], backgroundColor: ['#1B7F5E', '#2D9E7B', '#FF9F1C', '#F59E0B'] }]
                     },
                     options: { responsive: true, maintainAspectRatio: false }
@@ -2043,9 +2027,9 @@
                 charts.rentabilidade = new Chart(ctx6, {
                     type: 'bar',
                     data: {
-                        labels: clientesNomes.length > 0 ? clientesNomes : ['João Silva', 'Maria Santos', 'Pedro Costa'],
+                        labels: clientesNomes.length > 0 ? clientesNomes : ['JoÃ£o Silva', 'Maria Santos', 'Pedro Costa'],
                         datasets: [{
-                            label: 'Empréstimos (R$)',
+                            label: 'EmprÃ©stimos (R$)',
                             data: clientesValues.length > 0 ? clientesValues : [50, 120, 160],
                             backgroundColor: '#2D9E7B',
                             borderRadius: 6
@@ -2086,9 +2070,9 @@
 
             // Mapa de eventos com datas e clientes
             const eventosMap = {
-                5: { cliente: 'Pedro Costa', valor: 'R$ 8.000', status: '⚠️ Atrasado' },
-                15: { cliente: 'João Silva', valor: 'R$ 2.500', status: '⏳ Próximo' },
-                20: { cliente: 'Maria Santos', valor: 'R$ 5.000', status: '⏳ Próximo' }
+                5: { cliente: 'Pedro Costa', valor: 'R$ 8.000', status: 'âš ï¸ Atrasado' },
+                15: { cliente: 'JoÃ£o Silva', valor: 'R$ 2.500', status: 'â³ PrÃ³ximo' },
+                20: { cliente: 'Maria Santos', valor: 'R$ 5.000', status: 'â³ PrÃ³ximo' }
             };
 
             for (let i = 0; i < firstDay; i++) {
@@ -2107,7 +2091,7 @@
                 dayEl.style.flexDirection = 'column';
 
                 if (eventosMap[day]) {
-                    // Dia com evento - caixa laranja com informações
+                    // Dia com evento - caixa laranja com informaÃ§Ãµes
                     dayEl.style.background = '#FF9800';
                     dayEl.style.color = 'white';
                     dayEl.style.cursor = 'pointer';
@@ -2115,13 +2099,13 @@
 
                     const evento = eventosMap[day];
                     dayEl.innerHTML = `
-                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 6px;">🔔 ${day}</div>
+                        <div style="font-size: 14px; font-weight: bold; margin-bottom: 6px;">ðŸ”” ${day}</div>
                         <div style="font-size: 12px; font-weight: 600; line-height: 1.3;">${evento.cliente}</div>
                         <div style="font-size: 11px; line-height: 1.2; margin-top: 4px;">${evento.valor}</div>
                         <div style="font-size: 10px; margin-top: 4px;">${evento.status}</div>
                     `;
                 } else {
-                    // Dia sem evento - apenas número
+                    // Dia sem evento - apenas nÃºmero
                     dayEl.style.background = 'transparent';
                     dayEl.style.color = '#333';
                     dayEl.style.justifyContent = 'flex-start';
@@ -2155,7 +2139,7 @@
             const endereco = document.getElementById('cliente-endereco-novo').value.trim();
 
             if (!nome || !email || !telefone || !whatsapp || !endereco) {
-                alert('❌ Preencha todos os campos!');
+                alert('âŒ Preencha todos os campos!');
                 return;
             }
 
@@ -2174,21 +2158,21 @@
             clientes.push(novoCliente);
             localStorage.setItem('clientes', JSON.stringify(clientes));
 
-            // Adicionar à lista de clientes dinamicamente
+            // Adicionar Ã  lista de clientes dinamicamente
             adicionarClienteAoLista(novoCliente);
 
-            // Atualizar gráficos e estatísticas
+            // Atualizar grÃ¡ficos e estatÃ­sticas
             updateCharts();
             atualizarEstatisticas();
 
-            // Limpar formulário
+            // Limpar formulÃ¡rio
             document.getElementById('cliente-nome-novo').value = '';
             document.getElementById('cliente-email-novo').value = '';
             document.getElementById('cliente-telefone-novo').value = '';
             document.getElementById('cliente-whatsapp-novo').value = '';
             document.getElementById('cliente-endereco-novo').value = '';
 
-            alert('✅ Cliente ' + nome + ' adicionado com sucesso!');
+            alert('âœ… Cliente ' + nome + ' adicionado com sucesso!');
         }
 
         function adicionarClienteAoLista(cliente) {
@@ -2208,29 +2192,29 @@
 
             clienteCard.innerHTML = `
                 <div class="item-name">${cliente.nome}</div>
-                <div class="item-detail">📧 ${cliente.email}</div>
-                <div class="item-detail">📱 ${cliente.telefone}</div>
-                <div class="item-detail">💬 ${cliente.whatsapp}</div>
-                <span class="badge badge-success">✓ ${cliente.status}</span>
+                <div class="item-detail">ðŸ“§ ${cliente.email}</div>
+                <div class="item-detail">ðŸ“± ${cliente.telefone}</div>
+                <div class="item-detail">ðŸ’¬ ${cliente.whatsapp}</div>
+                <span class="badge badge-success">âœ“ ${cliente.status}</span>
             `;
 
             listaCli.appendChild(clienteCard);
         }
 
-        function addEmprestimo(e) { e.preventDefault(); alert('✅ Empréstimo criado com sucesso!'); }
-        function addPagamento(e) { e.preventDefault(); alert('✅ Pagamento registrado com sucesso!'); }
-        function saveConfig(e) { e.preventDefault(); alert('✅ Configurações salvas!'); }
+        function addEmprestimo(e) { e.preventDefault(); alert('âœ… EmprÃ©stimo criado com sucesso!'); }
+        function addPagamento(e) { e.preventDefault(); alert('âœ… Pagamento registrado com sucesso!'); }
+        function saveConfig(e) { e.preventDefault(); alert('âœ… ConfiguraÃ§Ãµes salvas!'); }
 
         function exportToCSV() {
-            alert('📊 Exportação para CSV iniciada...\n\nArquivo: relatorio_emprestimos.csv');
+            alert('ðŸ“Š ExportaÃ§Ã£o para CSV iniciada...\n\nArquivo: relatorio_emprestimos.csv');
         }
 
         function exportToExcel() {
-            alert('📋 Exportação para Excel iniciada...\n\nArquivo: relatorio_emprestimos.xlsx');
+            alert('ðŸ“‹ ExportaÃ§Ã£o para Excel iniciada...\n\nArquivo: relatorio_emprestimos.xlsx');
         }
 
         function exportToPDF() {
-            alert('📄 Exportação para PDF iniciada...\n\nArquivo: relatorio_emprestimos.pdf');
+            alert('ðŸ“„ ExportaÃ§Ã£o para PDF iniciada...\n\nArquivo: relatorio_emprestimos.pdf');
         }
 
         function importarClientes() {
@@ -2239,7 +2223,7 @@
             const statusDiv = document.getElementById('statusImportacao');
 
             if (!file) {
-                statusDiv.textContent = '❌ Selecione um arquivo!';
+                statusDiv.textContent = 'âŒ Selecione um arquivo!';
                 statusDiv.style.color = 'var(--danger)';
                 return;
             }
@@ -2251,7 +2235,7 @@
                     const linhas = csv.split('\n');
                     const clientes = [];
 
-                    // Pular cabeçalho
+                    // Pular cabeÃ§alho
                     for (let i = 1; i < linhas.length; i++) {
                         if (linhas[i].trim() === '') continue;
 
@@ -2280,11 +2264,11 @@
                     });
 
                     localStorage.setItem('clientes', JSON.stringify(clientesMerged));
-                    statusDiv.textContent = `✅ ${clientes.length} cliente(s) importado(s) com sucesso!`;
+                    statusDiv.textContent = `âœ… ${clientes.length} cliente(s) importado(s) com sucesso!`;
                     statusDiv.style.color = 'var(--success)';
                     fileInput.value = '';
                 } catch (erro) {
-                    statusDiv.textContent = '❌ Erro ao importar arquivo!';
+                    statusDiv.textContent = 'âŒ Erro ao importar arquivo!';
                     statusDiv.style.color = 'var(--danger)';
                 }
             };
@@ -2296,12 +2280,12 @@
             const statusDiv = document.getElementById('statusExportacao');
 
             if (clientes.length === 0) {
-                statusDiv.textContent = '⚠️ Nenhum cliente para exportar!';
+                statusDiv.textContent = 'âš ï¸ Nenhum cliente para exportar!';
                 statusDiv.style.color = 'var(--warning)';
                 return;
             }
 
-            let csv = 'Nome,Email,Telefone,WhatsApp,Endereço,Status\n';
+            let csv = 'Nome,Email,Telefone,WhatsApp,EndereÃ§o,Status\n';
             clientes.forEach(cliente => {
                 csv += `"${cliente.nome}","${cliente.email}","${cliente.telefone}","${cliente.whatsapp}","${cliente.endereco}","${cliente.status}"\n`;
             });
@@ -2313,7 +2297,7 @@
             link.setAttribute('download', `clientes_${new Date().toISOString().split('T')[0]}.csv`);
             link.click();
 
-            statusDiv.textContent = `✅ Planilha exportada com ${clientes.length} cliente(s)!`;
+            statusDiv.textContent = `âœ… Planilha exportada com ${clientes.length} cliente(s)!`;
             statusDiv.style.color = 'var(--success)';
         }
 
@@ -2322,7 +2306,7 @@
             const statusDiv = document.getElementById('statusExportacao');
 
             if (clientes.length === 0) {
-                statusDiv.textContent = '⚠️ Nenhum cliente para exportar!';
+                statusDiv.textContent = 'âš ï¸ Nenhum cliente para exportar!';
                 statusDiv.style.color = 'var(--warning)';
                 return;
             }
@@ -2335,7 +2319,7 @@
             link.setAttribute('download', `clientes_${new Date().toISOString().split('T')[0]}.json`);
             link.click();
 
-            statusDiv.textContent = `✅ Arquivo JSON exportado com ${clientes.length} cliente(s)!`;
+            statusDiv.textContent = `âœ… Arquivo JSON exportado com ${clientes.length} cliente(s)!`;
             statusDiv.style.color = 'var(--success)';
         }
 
@@ -2344,7 +2328,7 @@
             const statusDiv = document.getElementById('statusExportacao');
 
             if (clientes.length === 0) {
-                statusDiv.textContent = '⚠️ Nenhum cliente para exportar!';
+                statusDiv.textContent = 'âš ï¸ Nenhum cliente para exportar!';
                 statusDiv.style.color = 'var(--warning)';
                 return;
             }
@@ -2354,7 +2338,7 @@
             XLSX.utils.book_append_sheet(wb, ws, 'Clientes');
             XLSX.writeFile(wb, `clientes_${new Date().toISOString().split('T')[0]}.xlsx`);
 
-            statusDiv.textContent = `✅ Arquivo Excel exportado com ${clientes.length} cliente(s)!`;
+            statusDiv.textContent = `âœ… Arquivo Excel exportado com ${clientes.length} cliente(s)!`;
             statusDiv.style.color = 'var(--success)';
         }
 
@@ -2467,15 +2451,15 @@
         }
 
         function restaurarCoresDefault() {
-            if (confirm('Deseja restaurar as cores padrão?')) {
+            if (confirm('Deseja restaurar as cores padrÃ£o?')) {
                 localStorage.removeItem('coresPersonalizadas');
                 location.reload();
             }
         }
 
         function resetData() {
-            if (confirm('⚠️ Tem certeza? Todos os dados serão deletados!')) {
-                alert('✓ Dados resetados. Página será recarregada...');
+            if (confirm('âš ï¸ Tem certeza? Todos os dados serÃ£o deletados!')) {
+                alert('âœ“ Dados resetados. PÃ¡gina serÃ¡ recarregada...');
                 location.reload();
             }
         }
@@ -2506,7 +2490,7 @@
                         const base64 = event.target.result;
                         localStorage.setItem('fotoPerfil', base64);
                         carregarFotoPerfil();
-                        alert('✅ Foto de perfil atualizada com sucesso!');
+                        alert('âœ… Foto de perfil atualizada com sucesso!');
                     };
                     reader.readAsDataURL(file);
                 }
@@ -2524,19 +2508,19 @@
 
         function sendEmail(clienteEmail) {
             if (!clienteEmail) {
-                alert('Email do cliente não encontrado');
+                alert('Email do cliente nÃ£o encontrado');
                 return;
             }
-            window.location.href = `mailto:${clienteEmail}?subject=Cobrança%20de%20Empréstimo`;
+            window.location.href = `mailto:${clienteEmail}?subject=CobranÃ§a%20de%20EmprÃ©stimo`;
         }
 
         function sendWhatsApp(clientePhone) {
             if (!clientePhone) {
-                alert('WhatsApp do cliente não encontrado');
+                alert('WhatsApp do cliente nÃ£o encontrado');
                 return;
             }
             const phone = clientePhone.replace(/[^0-9]/g, '');
-            const message = encodeURIComponent('Olá! Gostaria de cobrar sobre seu empréstimo pendente.');
+            const message = encodeURIComponent('OlÃ¡! Gostaria de cobrar sobre seu emprÃ©stimo pendente.');
             window.location.href = `https://wa.me/${phone}?text=${message}`;
         }
 
@@ -2551,18 +2535,18 @@
             div.id = 'fabMenu';
             div.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:white;border-radius:12px;padding:20px;box-shadow:0 8px 32px rgba(0,0,0,0.2);z-index:10000;text-align:center;font-family:Arial,sans-serif;min-width:280px;';
             div.innerHTML = `
-                <h3 style="margin:0 0 20px 0;color:#333;">Menu de Ações</h3>
+                <h3 style="margin:0 0 20px 0;color:#333;">Menu de AÃ§Ãµes</h3>
                 <button onclick="showPage('emprestimos');document.getElementById('fabMenu').remove()" style="display:block;width:100%;padding:12px;margin:8px 0;background:#27ae60;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;">
-                    💰 Novo Empréstimo
+                    ðŸ’° Novo EmprÃ©stimo
                 </button>
                 <button onclick="showPage('clientes');document.getElementById('fabMenu').remove()" style="display:block;width:100%;padding:12px;margin:8px 0;background:#3498db;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;">
-                    👥 Novo Cliente
+                    ðŸ‘¥ Novo Cliente
                 </button>
                 <button onclick="showPage('pagamentos');document.getElementById('fabMenu').remove()" style="display:block;width:100%;padding:12px;margin:8px 0;background:#e74c3c;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;">
-                    💳 Novo Pagamento
+                    ðŸ’³ Novo Pagamento
                 </button>
                 <button onclick="document.getElementById('fabMenu').remove()" style="display:block;width:100%;padding:12px;margin:8px 0;background:#95a5a6;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;">
-                    ❌ Cancelar
+                    âŒ Cancelar
                 </button>
             `;
             document.body.appendChild(div);
@@ -2572,31 +2556,31 @@
             setTimeout(() => {
                 document.getElementById('loading').classList.add('hidden');
 
-                // Verifica se já está logado
+                // Verifica se jÃ¡ estÃ¡ logado
                 const token = localStorage.getItem('token');
                 if (token) {
-                    // Já está logado, mostra dashboard
+                    // JÃ¡ estÃ¡ logado, mostra dashboard
                     document.getElementById('login-page').classList.add('hidden');
                     showPage('dashboard');
-                    // Carrega os gráficos logo após mostrar o dashboard
+                    // Carrega os grÃ¡ficos logo apÃ³s mostrar o dashboard
                     setTimeout(loadChartJS, 200);
                 } else {
-                    // Não está logado, mostra login
+                    // NÃ£o estÃ¡ logado, mostra login
                     document.getElementById('login-page').classList.remove('hidden');
                 }
             }, 1500);
         });
 
         function abrirPerfilCliente(nome, email, telefone, whatsapp) {
-            // Preencher informações do cliente
+            // Preencher informaÃ§Ãµes do cliente
             document.getElementById('cliente-nome').textContent = nome;
             document.getElementById('cliente-email').textContent = email;
             document.getElementById('cliente-telefone').textContent = telefone;
             document.getElementById('cliente-whatsapp').textContent = whatsapp;
 
-            // Simular empréstimos do cliente
+            // Simular emprÃ©stimos do cliente
             let emprestimosHTML = '';
-            if (nome === 'João Silva') {
+            if (nome === 'JoÃ£o Silva') {
                 emprestimosHTML = `
                     <div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                         <p style="font-weight: 600;">R$ 2.500,00</p>
@@ -2623,7 +2607,7 @@
                     <div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                         <p style="font-weight: 600;">R$ 8.000,00</p>
                         <p style="font-size: 13px; color: var(--text-secondary);">Taxa: 1% ao dia | Simples</p>
-                        <p style="font-size: 13px; color: var(--text-secondary);">Vencimento: 05/10/2026 (⚠️ ATRASADO)</p>
+                        <p style="font-size: 13px; color: var(--text-secondary);">Vencimento: 05/10/2026 (âš ï¸ ATRASADO)</p>
                         <p style="font-size: 13px; color: var(--text-secondary); margin-top: 5px;">Juros Acumulados: R$ 160,00</p>
                     </div>
                 `;
@@ -2633,30 +2617,30 @@
 
             // Pagamentos do cliente
             let pagamentosHTML = '';
-            if (nome === 'João Silva') {
+            if (nome === 'JoÃ£o Silva') {
                 pagamentosHTML = `<div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                     <p style="font-weight: 600;">R$ 1.000,00</p>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 08/10/2026 | Método: PIX</p>
+                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 08/10/2026 | MÃ©todo: PIX</p>
                     <span class="badge badge-success">Confirmado</span>
                 </div>`;
             } else if (nome === 'Maria Santos') {
                 pagamentosHTML = `<div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                     <p style="font-weight: 600;">R$ 2.500,00</p>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 07/10/2026 | Método: Transferência</p>
+                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 07/10/2026 | MÃ©todo: TransferÃªncia</p>
                     <span class="badge badge-success">Confirmado</span>
                 </div>`;
             } else if (nome === 'Pedro Costa') {
                 pagamentosHTML = `<div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                     <p style="font-weight: 600;">R$ 1.500,00</p>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 05/10/2026 | Método: Dinheiro</p>
+                    <p style="font-size: 13px; color: var(--text-secondary);">Data: 05/10/2026 | MÃ©todo: Dinheiro</p>
                     <span class="badge badge-success">Confirmado</span>
                 </div>`;
             }
 
-            document.getElementById('cliente-emprestimos').innerHTML = emprestimosHTML || '<p style="color: var(--text-secondary);">Nenhum empréstimo encontrado</p>';
+            document.getElementById('cliente-emprestimos').innerHTML = emprestimosHTML || '<p style="color: var(--text-secondary);">Nenhum emprÃ©stimo encontrado</p>';
             document.getElementById('cliente-pagamentos').innerHTML = pagamentosHTML || '<p style="color: var(--text-secondary);">Nenhum pagamento registrado</p>';
 
-            // Abrir página do perfil
+            // Abrir pÃ¡gina do perfil
             showPage('perfilCliente');
         }
 
@@ -2672,13 +2656,13 @@
                 whatsapp: whatsapp
             };
 
-            // Preencher informações do cliente
+            // Preencher informaÃ§Ãµes do cliente
             document.getElementById('cliente-nome').textContent = nome;
             document.getElementById('cliente-email').textContent = email;
             document.getElementById('cliente-telefone').textContent = telefone;
             document.getElementById('cliente-whatsapp').textContent = whatsapp;
 
-            // Buscar empréstimos desse cliente
+            // Buscar emprÃ©stimos desse cliente
             const emprestimos = JSON.parse(localStorage.getItem('emprestimos') || '[]');
             const emprestimosCliente = emprestimos.filter(e => e.cliente === nome);
 
@@ -2687,10 +2671,11 @@
 
             emprestimosCliente.forEach(emp => {
                 totalEmprestado += parseFloat(emp.valor);
+                const tipoJuros = emp.tipo ? emp.tipo.charAt(0).toUpperCase() + emp.tipo.slice(1) : 'NÃ£o especificado';
                 emprestimosHTML += `
                     <div style="padding: 15px; background: var(--bg-gray); border-radius: 8px;">
                         <p style="font-weight: 600;">R$ ${emp.valor}</p>
-                        <p style="font-size: 13px; color: var(--text-secondary);">Taxa: ${emp.taxa}% ao dia | ${emp.tipo.charAt(0).toUpperCase() + emp.tipo.slice(1)}</p>
+                        <p style="font-size: 13px; color: var(--text-secondary);">Taxa: ${emp.taxa}% ao dia | ${tipoJuros}</p>
                         <p style="font-size: 13px; color: var(--text-secondary);">Vencimento: ${emp.vencimento}</p>
                         <p style="font-size: 13px; color: var(--text-secondary); margin-top: 5px;">Juros Acumulados: R$ ${emp.jurosAcumulados}</p>
                     </div>
@@ -2698,19 +2683,19 @@
             });
 
             if (emprestimosHTML === '') {
-                emprestimosHTML = '<p style="color: var(--text-secondary);">Nenhum empréstimo registrado</p>';
+                emprestimosHTML = '<p style="color: var(--text-secondary);">Nenhum emprÃ©stimo registrado</p>';
             }
 
             document.getElementById('cliente-emprestimos').innerHTML = emprestimosHTML;
             document.getElementById('cliente-total-emprestado').textContent = 'R$ ' + totalEmprestado.toFixed(2);
             document.getElementById('cliente-total-recebido').textContent = 'R$ 0,00';
 
-            // Abrir página do perfil
+            // Abrir pÃ¡gina do perfil
             showPage('perfilCliente', event);
         }
 
         function novoEmprestimoCliente() {
-            // Obter dados do cliente da página perfilCliente
+            // Obter dados do cliente da pÃ¡gina perfilCliente
             const nomeCliente = clientePerfilAtual.nome;
             const emailCliente = clientePerfilAtual.email;
             const telefoneCliente = clientePerfilAtual.telefone;
@@ -2722,7 +2707,7 @@
                 telefone: telefoneCliente
             };
 
-            // Pré-preencher campos da página de novo empréstimo
+            // PrÃ©-preencher campos da pÃ¡gina de novo emprÃ©stimo
             document.getElementById('novo-cliente-nome').textContent = nomeCliente;
             document.getElementById('novo-cliente-email').textContent = emailCliente;
             document.getElementById('novo-cliente-telefone').textContent = telefoneCliente;
@@ -2734,7 +2719,7 @@
             document.getElementById('novo-data').value = '2026-10-10';
             document.getElementById('novo-vencimento').value = '';
 
-            // Mostrar página de novo empréstimo
+            // Mostrar pÃ¡gina de novo emprÃ©stimo
             showPage('novoEmprestimo', event);
         }
 
@@ -2746,19 +2731,19 @@
             const vencimento = document.getElementById('novo-vencimento').value;
 
             if (!valor || !taxa || !vencimento) {
-                alert('❌ Preencha todos os campos obrigatórios!');
+                alert('âŒ Preencha todos os campos obrigatÃ³rios!');
                 return;
             }
 
             if (valor <= 0 || taxa <= 0) {
-                alert('❌ Valor e taxa devem ser maiores que zero!');
+                alert('âŒ Valor e taxa devem ser maiores que zero!');
                 return;
             }
 
-            // Calcular juros acumulados (simples para demonstração)
+            // Calcular juros acumulados (simples para demonstraÃ§Ã£o)
             const jurosAcumulados = (valor * taxa * 10) / 100;
 
-            // Criar objeto de novo empréstimo
+            // Criar objeto de novo emprÃ©stimo
             const novoEmprestimo = {
                 cliente: clienteEmprestimoAtual.nome,
                 valor: valor.toFixed(2),
@@ -2775,12 +2760,12 @@
             emprestimos.push(novoEmprestimo);
             localStorage.setItem('emprestimos', JSON.stringify(emprestimos));
 
-            // Atualizar gráficos e estatísticas
+            // Atualizar grÃ¡ficos e estatÃ­sticas
             updateCharts();
             atualizarEstatisticas();
 
             // Mostrar mensagem de sucesso
-            alert('✅ Empréstimo criado com sucesso!\n\nCliente: ' + novoEmprestimo.cliente + '\nValor: R$ ' + novoEmprestimo.valor + '\nTaxa: ' + novoEmprestimo.taxa + '% ao dia\nVencimento: ' + novoEmprestimo.vencimento);
+            alert('âœ… EmprÃ©stimo criado com sucesso!\n\nCliente: ' + novoEmprestimo.cliente + '\nValor: R$ ' + novoEmprestimo.valor + '\nTaxa: ' + novoEmprestimo.taxa + '% ao dia\nVencimento: ' + novoEmprestimo.vencimento);
 
             // Voltar para perfil do cliente
             showPage('perfilCliente', event);
@@ -2811,7 +2796,7 @@
             const clientes = JSON.parse(localStorage.getItem('clientes') || '[]');
 
             if (emprestimos.length === 0) {
-                listaEmprestimos.innerHTML = '<p style="color: var(--text-secondary);">Nenhum empréstimo registrado</p>';
+                listaEmprestimos.innerHTML = '<p style="color: var(--text-secondary);">Nenhum emprÃ©stimo registrado</p>';
                 return;
             }
 
@@ -2819,7 +2804,7 @@
             emprestimos.forEach(emp => {
                 const cliente = clientes.find(c => c.nome === emp.cliente);
                 const badgeClass = new Date(emp.vencimento) < new Date() ? 'badge-danger' : 'badge-success';
-                const badgeTexto = new Date(emp.vencimento) < new Date() ? '⚠️ Vencido' : '✓ Ativo';
+                const badgeTexto = new Date(emp.vencimento) < new Date() ? 'âš ï¸ Vencido' : 'âœ“ Ativo';
 
                 const clienteEmail = cliente?.email || '';
                 const clienteTelefone = cliente?.telefone || '';
@@ -2830,7 +2815,7 @@
                         <div class="item-name">${emp.cliente} - R$ ${emp.valor}</div>
                         <div class="item-detail">Taxa: ${emp.taxa}% ao dia (${emp.tipo.charAt(0).toUpperCase() + emp.tipo.slice(1)})</div>
                         <div class="item-detail">Juros Acumulados: R$ ${emp.jurosAcumulados}</div>
-                        <div class="item-detail">Próximo Vencimento: ${emp.vencimento}</div>
+                        <div class="item-detail">PrÃ³ximo Vencimento: ${emp.vencimento}</div>
                         <span class="badge ${badgeClass}">${badgeTexto}</span>
                     </div>
                 `;
@@ -2855,10 +2840,10 @@
                 html += `
                     <div class="item-card cliente-item" data-nome="${cliente.nome}" data-email="${cliente.email}" data-telefone="${cliente.telefone}" onclick="abrirPerfilCliente('${cliente.nome}', '${cliente.email}', '${cliente.telefone}', '${cliente.whatsapp || ''}')" style="cursor: pointer;">
                         <div class="item-name">${cliente.nome}</div>
-                        <div class="item-detail">📧 ${cliente.email}</div>
-                        <div class="item-detail">📱 ${cliente.telefone}</div>
-                        <div class="item-detail">💬 ${cliente.whatsapp || 'N/A'}</div>
-                        <span class="badge badge-success">✓ Ativo</span>
+                        <div class="item-detail">ðŸ“§ ${cliente.email}</div>
+                        <div class="item-detail">ðŸ“± ${cliente.telefone}</div>
+                        <div class="item-detail">ðŸ’¬ ${cliente.whatsapp || 'N/A'}</div>
+                        <span class="badge badge-success">âœ“ Ativo</span>
                     </div>
                 `;
             });
@@ -2886,7 +2871,7 @@
                         <div class="item-name">Pagamento - R$ ${pag.valor}</div>
                         <div class="item-detail">Cliente: ${emprestimo?.cliente || 'N/A'}</div>
                         <div class="item-detail">Data: ${pag.data_pagamento}</div>
-                        <span class="badge badge-success">✓ Concluído</span>
+                        <span class="badge badge-success">âœ“ ConcluÃ­do</span>
                     </div>
                 `;
             });
@@ -2902,7 +2887,7 @@
             const cobrancasPendentes = emprestimos.filter(e => new Date(e.vencimento) < new Date());
 
             if (cobrancasPendentes.length === 0) {
-                listaCobrancas.innerHTML = '<p style="color: var(--text-secondary);">Nenhuma cobrança pendente</p>';
+                listaCobrancas.innerHTML = '<p style="color: var(--text-secondary);">Nenhuma cobranÃ§a pendente</p>';
                 return;
             }
 
@@ -2914,7 +2899,7 @@
                         <div class="item-name">${emp.cliente} - R$ ${emp.valor}</div>
                         <div class="item-detail">Vencimento: ${emp.vencimento}</div>
                         <div class="item-detail">Dias em atraso: ${diasAtrasado}</div>
-                        <span class="badge badge-danger">⚠️ Atrasado</span>
+                        <span class="badge badge-danger">âš ï¸ Atrasado</span>
                     </div>
                 `;
             });
@@ -2991,7 +2976,7 @@
             if (!dropdown) return;
 
             if (emprestimos.length === 0) {
-                dropdown.innerHTML = '<p style="padding: 10px; color: var(--text-secondary);">Nenhum empréstimo cadastrado</p>';
+                dropdown.innerHTML = '<p style="padding: 10px; color: var(--text-secondary);">Nenhum emprÃ©stimo cadastrado</p>';
                 dropdown.style.display = 'block';
                 return;
             }
@@ -3003,7 +2988,7 @@
             );
 
             if (emprestimosFiltrados.length === 0) {
-                dropdown.innerHTML = '<p style="padding: 10px; color: var(--text-secondary);">Nenhum empréstimo encontrado</p>';
+                dropdown.innerHTML = '<p style="padding: 10px; color: var(--text-secondary);">Nenhum emprÃ©stimo encontrado</p>';
                 dropdown.style.display = 'block';
                 return;
             }
@@ -3041,7 +3026,7 @@
             try {
                 const token = localStorage.getItem('token');
                 if (!token) {
-                    console.error('Token não encontrado');
+                    console.error('Token nÃ£o encontrado');
                     return;
                 }
 
@@ -3070,7 +3055,7 @@
                 document.getElementById('profile-avatar').textContent = initials;
             } catch (error) {
                 console.error('Erro ao carregar perfil:', error);
-                alert('❌ Erro ao carregar dados do perfil');
+                alert('âŒ Erro ao carregar dados do perfil');
             }
         }
 
@@ -3084,13 +3069,13 @@
                 const whatsapp = document.getElementById('profile-whatsapp').value;
 
                 if (!email) {
-                    alert('Email é obrigatório!');
+                    alert('Email Ã© obrigatÃ³rio!');
                     return;
                 }
 
                 const token = localStorage.getItem('token');
                 if (!token) {
-                    alert('Sessão expirada. Faça login novamente.');
+                    alert('SessÃ£o expirada. FaÃ§a login novamente.');
                     return;
                 }
 
@@ -3114,10 +3099,10 @@
                     throw new Error(`Erro ${response.status}: ${response.statusText}`);
                 }
 
-                alert('✅ Perfil atualizado com sucesso!');
+                alert('âœ… Perfil atualizado com sucesso!');
             } catch (error) {
                 console.error('Erro ao atualizar perfil:', error);
-                alert('❌ Erro ao salvar perfil: ' + error.message);
+                alert('âŒ Erro ao salvar perfil: ' + error.message);
             }
         }
 
@@ -3132,17 +3117,17 @@
                     return;
                 }
                 if (newPass !== confirm) {
-                    alert('As senhas não conferem');
+                    alert('As senhas nÃ£o conferem');
                     return;
                 }
                 if (newPass.length < 6) {
-                    alert('Senha deve ter no mínimo 6 caracteres');
+                    alert('Senha deve ter no mÃ­nimo 6 caracteres');
                     return;
                 }
 
                 const token = localStorage.getItem('token');
                 if (!token) {
-                    alert('Sessão expirada. Faça login novamente.');
+                    alert('SessÃ£o expirada. FaÃ§a login novamente.');
                     return;
                 }
 
@@ -3163,13 +3148,13 @@
                     throw new Error(error.error || `Erro ${response.status}`);
                 }
 
-                alert('✅ Senha alterada com sucesso!');
+                alert('âœ… Senha alterada com sucesso!');
                 document.getElementById('current-password').value = '';
                 document.getElementById('new-password').value = '';
                 document.getElementById('confirm-password').value = '';
             } catch (error) {
                 console.error('Erro ao alterar senha:', error);
-                alert('❌ Erro ao alterar senha: ' + error.message);
+                alert('âŒ Erro ao alterar senha: ' + error.message);
             }
         }
 
@@ -3177,7 +3162,7 @@
 
         function enviarEmail(cliente, email) {
             if (!email) {
-                alert('❌ Cliente não tem email cadastrado');
+                alert('âŒ Cliente nÃ£o tem email cadastrado');
                 return;
             }
             mostrarModalEnvio('email', cliente, email);
@@ -3185,7 +3170,7 @@
 
         function enviarWhatsApp(cliente, telefone) {
             if (!telefone) {
-                alert('❌ Cliente não tem telefone/WhatsApp cadastrado');
+                alert('âŒ Cliente nÃ£o tem telefone/WhatsApp cadastrado');
                 return;
             }
             mostrarModalEnvio('whatsapp', cliente, telefone);
@@ -3194,7 +3179,7 @@
         function mostrarModalEnvio(tipo, cliente, endereco) {
             envioAtual = { tipo, cliente, endereco };
 
-            const titulo = tipo === 'email' ? '📧 Enviar Email' : '💬 Enviar WhatsApp';
+            const titulo = tipo === 'email' ? 'ðŸ“§ Enviar Email' : 'ðŸ’¬ Enviar WhatsApp';
             document.getElementById('modalTitulo').textContent = titulo;
             document.getElementById('modalCliente').textContent = `Cliente: ${cliente}`;
             document.getElementById('panelAgendamento').style.display = 'none';
@@ -3220,7 +3205,7 @@
             const hora = document.getElementById('inputHora').value;
 
             const frequenciaMap = {
-                'diario': 'Diário',
+                'diario': 'DiÃ¡rio',
                 'semanal': 'Semanal',
                 'quinzenal': 'Quinzenal',
                 'mensal': 'Mensal'
@@ -3238,24 +3223,24 @@
             });
 
             localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
-            alert(`✅ ${envioAtual.tipo === 'email' ? 'Email' : 'WhatsApp'} agendado com sucesso!\n\nCliente: ${envioAtual.cliente}\nFrequência: ${frequenciaMap[frequencia]}\nHora: ${hora}`);
-            console.log(`⏰ ${envioAtual.tipo === 'email' ? '📧' : '💬'} agendado para ${envioAtual.cliente} - ${frequenciaMap[frequencia]} às ${hora}`);
+            alert(`âœ… ${envioAtual.tipo === 'email' ? 'Email' : 'WhatsApp'} agendado com sucesso!\n\nCliente: ${envioAtual.cliente}\nFrequÃªncia: ${frequenciaMap[frequencia]}\nHora: ${hora}`);
+            console.log(`â° ${envioAtual.tipo === 'email' ? 'ðŸ“§' : 'ðŸ’¬'} agendado para ${envioAtual.cliente} - ${frequenciaMap[frequencia]} Ã s ${hora}`);
             fecharModalEnvio();
         }
 
         function enviarAgora(tipo, cliente, endereco) {
             if (tipo === 'email') {
-                const mensagem = `Lembrete de cobrança - você possui um empréstimo vencido. Favor regularizar a situação.`;
-                const mailto = `mailto:${endereco}?subject=Lembrete de Cobrança&body=${encodeURIComponent(mensagem)}`;
+                const mensagem = `Lembrete de cobranÃ§a - vocÃª possui um emprÃ©stimo vencido. Favor regularizar a situaÃ§Ã£o.`;
+                const mailto = `mailto:${endereco}?subject=Lembrete de CobranÃ§a&body=${encodeURIComponent(mensagem)}`;
                 window.location.href = mailto;
-                alert(`✅ Email aberto!\n\nCliente: ${cliente}\nPara: ${endereco}\n\nRevise e envie a mensagem.`);
-                console.log(`📧 Email aberto para ${endereco} (${cliente})`);
+                alert(`âœ… Email aberto!\n\nCliente: ${cliente}\nPara: ${endereco}\n\nRevise e envie a mensagem.`);
+                console.log(`ðŸ“§ Email aberto para ${endereco} (${cliente})`);
             } else {
-                const mensagem = `Olá ${cliente}! 👋\n\nEste é um lembrete: você possui um empréstimo que precisa ser regularizado. Favor entrar em contato conosco.\n\nObrigado!`;
+                const mensagem = `OlÃ¡ ${cliente}! ðŸ‘‹\n\nEste Ã© um lembrete: vocÃª possui um emprÃ©stimo que precisa ser regularizado. Favor entrar em contato conosco.\n\nObrigado!`;
                 const url = `https://wa.me/${endereco.replace(/\D/g, '')}?text=${encodeURIComponent(mensagem)}`;
                 window.open(url, '_blank');
-                alert(`✅ WhatsApp aberto!\n\nCliente: ${cliente}\nTelefone: ${endereco}\n\nRevise e envie a mensagem.`);
-                console.log(`💬 WhatsApp aberto para ${endereco} (${cliente})`);
+                alert(`âœ… WhatsApp aberto!\n\nCliente: ${cliente}\nTelefone: ${endereco}\n\nRevise e envie a mensagem.`);
+                console.log(`ðŸ’¬ WhatsApp aberto para ${endereco} (${cliente})`);
             }
         }
 
